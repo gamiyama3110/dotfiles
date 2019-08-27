@@ -1,3 +1,5 @@
+echo "Hellow There." | cowsay
+
 if [[ -s ~/nvm/nvm.sh ]];
   then source ~/.nvm/nvm.sh
 fi
