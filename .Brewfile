@@ -17,6 +17,7 @@ cask "visual-studio-code"
 cask "iterm2"
 cask "macpass"
 cask "scroll-reverser"
+cask "clipy"
 
 mas "GIPHY CAPTURE", id: 668208984
 mas "RunCat", id: 1429033973
