@@ -1,16 +1,22 @@
-tap "homebrew/bundle"
-tap "homebrew/core"
-tap "homebrew/services"
-brew "cntlm", restart_service: true
-brew "cowsay"
+cask_args appdir: "/Applications"
+
 brew "git"
-brew "gnupg"
-brew "goenv"
 brew "nkf"
-brew "perl-build"
-brew "plenv"
-brew "qrencode"
-brew "sbtenv"
-brew "scalaenv"
-brew "sqlite"
 brew "wget"
+brew "jq"
+
+brew "cowsay"
+brew "ffmpeg"
+
+cask "alfred"
+cask "docker"
+cask "google-chrome"
+cask "google-japanese-ime"
+cask "intellij-idea-ce"
+cask "visual-studio-code"
+cask "iterm2"
+cask "macpass"
+cask "scroll-reverser"
+
+mas "GIPHY CAPTURE", id: 668208984
+mas "RunCat", id: 1429033973

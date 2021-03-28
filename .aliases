@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+alias ~="cd ~"
+alias dl="cd ~/Downloads"
+alias g="git"
+
+alias grep="grep --color=auto"
+alias fgrep="grep --color=auto"
+alias egrep="grep --color=auto"
+
+alias l="ls -lFG"
+alias lt="ls -ltG"
+alias la="ls -lAFG"
+
+# alias a8param='java -jar ~/opt/a8paramdec/a8paramdec.jar'

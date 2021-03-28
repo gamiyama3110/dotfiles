@@ -1,3 +1,8 @@
-[user]
-name = gamiyama3110
-email = gamiyamatatoo3198@gmail.com
+[alias]
+  whoami = config user.email 
+
+[core]
+  excludesfile = ~/.gitignore
+
+[color]
+  ui = auto

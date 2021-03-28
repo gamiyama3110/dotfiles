@@ -1,0 +1,19 @@
+## proxy setup
+# USER=hogehoge
+# PASS=hogehoge
+# export http_proxy=127.0.0.1:3128
+# export http_proxy=http://$USER:@PASS@proxy.gate.hoge.com:8080
+# export https_proxy=$http_proxy
+# export ALL_PROXY=$http_proxy
+#
+# export no_proxy=*
+
+# git setup
+GIT_NAME=gamiyama3110
+git config --global user.name "$GIT_NAME"
+
+GIT_EMAIL=gamiyamatatoo3198@gmail.com
+git config --global user.email "$GIT_EMAIL"
+
+
+echo ".extra reloaded."
