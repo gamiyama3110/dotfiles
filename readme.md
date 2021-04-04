@@ -1,13 +1,15 @@
 # my dotfiles.
-
-ここを参考
-https://github.com/mathiasbynens/dotfiles
+[ここ](https://github.com/mathiasbynens/dotfiles)を参考。
 
 ## Installation
-
-初めてこの設定を適用する場合。
 環境のdotfilesに上書きするので注意。
 
+#### git環境がない場合
+```
+cd; curl -#L https://github.com/gamiyama3110/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh}
+```
+
+#### git環境がある場合
 ```
 git clone https://github.com/gamiyama3110/dotfiles.git && cd dotfiles && source bootstrap.sh
 ```
@@ -16,4 +18,12 @@ git clone https://github.com/gamiyama3110/dotfiles.git && cd dotfiles && source 
 
 ```
 set -- -f; source bootstrap.sh
+```
+
+### homebrew
+インストール手順は公式を参照。
+https://brew.sh/index_ja
+
+```
+sh brew.sh
 ```

@@ -1,16 +1,14 @@
 #!/usr/bin/env bash
-
-if !(type "brew" > /dev/null 2>&1); then
-    # https://brew.sh/index_ja
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
+# homebrewのインストールは手動で行うこと。
+# https://brew.sh/index_ja
 
 brew update
 # brew upgrade
 
-brew bundle --global
+brew bundle --file Brewfile
+
 if [ "$WORKING_MODE" ]; then
-    brew bundle --file .Brewfile_work
+    brew bundle --file Brewfile_work
 fi
 
 brew cleanup

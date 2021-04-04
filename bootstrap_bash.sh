@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd "$(dirname "${BASH_SOURCE}")"
+cd $(dirname ${BASH_SOURCE})
 
 git pull origin main;
 
@@ -37,8 +37,23 @@ doIt() {
     rsync --exclude ".git/" \
         --exclude ".DS_Store" \
         --exclude "README.md" \
-        --exclude "bootstrap.sh" \
+        --exclude "bootstrap_bash.sh" \
+        --exclude "bootstrap_zsh.sh" \
+        --exclude "brew.sh" \
+        --exclude "Brewfile.lock.json" \
+        --exclude ".zprofile" \
+        --exclude ".zsh_prompt" \
+        --exclude ".zshrc" \
         -avh --no-perms . ~
+    
+    if [ ! -e ~/.prompt/git-prompt.sh ]; then
+        mkdir -p ~/.prompt/
+        cd ~/.prompt
+        curl -o git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+        curl -o git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+        curl -o _git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
+        cd -
+    fi
     source ~/.bash_profile
 
     ./brew.sh

@@ -1,9 +1,13 @@
 export CLICOLOR=1
 export TERM=xterm-256color
 
-source /usr/local/etc/bash_completion.d/git-prompt.sh
-source /usr/local/etc/bash_completion.d/git-completion.bash
-GIT_PS1_SHOWDIRTYSTATE=true
+source $HOME/.prompt/git-prompt.sh
+source $HOME/.prompt/git-completion.bash
+
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWUPSTREAM=1
+GIT_PS1_SHOWUNTRACKEDFILES=
+GIT_PS1_SHOWSTASHSTATE=1
 
 # PS1="[\u@\h \W]\$ "
 # PS1="\u@\h \W\[\033[31m\]$(__git_ps1 [%s])\[\033[00m\]\$ "

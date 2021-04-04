@@ -1,15 +1,16 @@
 cask_args appdir: "/Applications"
 
-brew "gradle"
+# brew "gradle"
+# nkf
 brew "asdf"
 brew "cntlm"
-brew "gnupg"
-brew "flyway"
+# brew "gnupg"
+# brew "flyway"
+brew "ffmpeg"
 
 cask "slack"
 
 mas "Fantastical", id: 975937182
 mas "Todoist", id: 585829637
-mas "Parallels Client", id: 600925318
 mas "WinArchiver Lite", id: 414855915
 mas "iMage Tools", id: 493949693
