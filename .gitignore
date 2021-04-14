@@ -1,6 +1,8 @@
 .DS_Store
-Desktop.ini
+*.swp
+*.swo
 ._*
+Desktop.ini
 Thumbs.db
 
 Brewfile.lock.json

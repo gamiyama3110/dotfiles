@@ -1,8 +1,6 @@
 [alias]
   whoami = config user.email 
-
 [core]
   excludesfile = ~/.gitignore
-
 [color]
   ui = auto

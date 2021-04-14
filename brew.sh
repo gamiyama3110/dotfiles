@@ -7,8 +7,4 @@ brew update
 
 brew bundle --file Brewfile
 
-if [ "$WORKING_MODE" ]; then
-    brew bundle --file Brewfile_work
-fi
-
 brew cleanup
