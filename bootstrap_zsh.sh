@@ -51,8 +51,6 @@ doIt() {
     fi
     source ~/.zprofile
 
-    ./brew.sh
-    
     echo "installation complete." | cowsay
 }
 

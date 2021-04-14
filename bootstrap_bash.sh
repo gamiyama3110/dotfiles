@@ -51,8 +51,6 @@ doIt() {
     fi
     source ~/.bash_profile
 
-    ./brew.sh
-    
     echo "installation complete." | cowsay
 }
 
